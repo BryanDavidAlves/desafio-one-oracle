@@ -1,0 +1,286 @@
+:root {
+    --cor-primaria: #561C24;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    background-color: rgb(238, 238, 238);
+    color: var(--cor-primaria);
+
+}
+
+.img-alura {
+    margin: 2% 5%;
+    width: 5%;
+    position: fixed;
+}
+
+main {
+    display: flex;
+    height: 90vh;
+    margin: 2%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secao-texto {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-esquerda {
+    margin: 10% 15% 2%;
+    width: 75%;
+    height: 100vh;
+    font-size: 32px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    /* Remove o redimensionamento manual */
+
+
+}
+
+.box-infos {
+    margin-left: 15%;
+}
+
+.infos {
+    display: flex;
+
+    gap: 5px;
+    font-size: 16px;
+}
+
+.box-infos-button {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.edit-button-1 {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.edit-button-1:hover {
+    background-color: #41151b;
+    /* Cor após o hover */
+    scale: 1.01;
+}
+.infos p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+ }
+
+.edit-button-1, .edit-button-2, .edit-button-3{
+    font-family: "Inter", sans-serif;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+.edit-button-2 {
+    background-color: none;
+    color: var(--cor-primaria);
+    border: var(--cor-primaria);
+    border: 2px solid;
+    font-size: 16px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-button-2, .edit-button-3:hover {
+    background-color: white;
+    /* Cor após o hover */
+    scale: 1.01;
+}
+
+.secao-resposta {
+    background-color: white;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    flex-direction: column;
+    word-break: break-word;
+}
+
+.img-lupa {
+    width: 50%;
+}
+
+.sem-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.sem-texto-titulo {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.sem-texto-subtitulo {
+    font-size: 16px;
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+/*ajustar pelo js o text area da direita*/
+.texto-direita {
+    display: none;
+    margin: 25% 15% 2%;
+    width: 75%;
+    height: 55vh;
+    font-size: 32px;
+    padding: 20px;
+    background-color: white;
+    resize: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.edit-button-3 {
+    background-color: white;
+    color: var(--cor-primaria);
+    border: var(--cor-primaria);
+    border: 2px solid;
+    font-size: 16px;
+    width: 80%;
+    border-radius: 24px;
+    height: 70px;
+    font-weight: 600;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .img-alura {
+        position: absolute;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+
+        height: auto;
+    }
+
+    .secao-texto {
+        width: 100%;
+        align-items: center;
+    }
+
+    .texto-esquerda {
+        margin: 8% 0%;
+        width: 90%;
+        height: 100vh;
+    }
+
+    .box-infos {
+        margin-left: 6%;
+        margin: 0;
+        width: 90%;
+    }
+
+    .edit-button-1 {
+        width: 300px;
+    }
+
+    .edit-button-2 {
+        width: 300px;
+    }
+
+    .box-infos-button {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .secao-resposta {
+        width: 90%;
+        padding: 30px 0px;
+    }
+
+    .img-menina {
+        display: none;
+    }
+
+    .sem-texto-subtitulo {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
+
+
+    /*ajustar pelo js o text area da direita*/
+    .texto-direita {
+        display: none;
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+    }
+
+    .edit-button-3 {
+        background-color: none;
+        color: var(--cor-primaria);
+        border: var(--cor-primaria);
+        border: 2px solid;
+        font-size: 16px;
+        width: 80%;
+        border-radius: 24px;
+        height: 60px;
+        font-weight: 600;
+        display: none;
+    }
+
+}
+
+@media (max-width:480px) {
+    .box-infos-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edit-button-1,
+    .edit-button-2 {
+        width: 95%;
+    }
+
+    .img-alura {
+        width: 7%;
+    }
+
+    .texto-esquerda {
+        margin: 25% 3%;
+    }
+}
