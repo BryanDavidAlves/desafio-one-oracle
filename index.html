@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/reset.css">
+
+    <script src="https://kit.fontawesome.com/57efc2ce52.js" crossorigin="anonymous"></script>
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <img class="img-alura" src="src/img/d.svg" alt="">
+    <main>
+
+        <section class="secao-texto">
+
+            <textarea class="texto-esquerda" name="texto-esquerda" id="texto-esquerda"
+                placeholder="Digite o texto"></textarea>
+            <section class="box-infos">
+
+                <div class="infos">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>apenas letras minúsculas e sem ascento</p>
+                </div>
+
+                <div class="box-infos-button">
+                    <button class="edit-button-1">Criptografar</button>
+                    <button class="edit-button-2">Descriptografar</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="secao-resposta">
+            <div class="sem-texto" id="semTexto">
+                <img class="img-lupa" src="src/img/lupa.png" alt="">
+                <h2 class="sem-texto-titulo">Nenhuma mensagem encontrada</h2>
+                <p class="sem-texto-subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <!--ajustar em breve pelo js-->
+
+                <textarea class="texto-direita" name="texto-direita" id="texto-direita" disabled></textarea>
+                <button class="edit-button-3">copiar</button>
+            
+            <!--ajustar em breve pelo js-->
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
